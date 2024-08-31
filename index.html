@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header ">
+        <div class="logo">Portfolio</div>
+        <nav>
+            <ul id="side-bar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="hidebar()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="showbar()"></i>
+        </nav>
+    </header>
+    <div class="header-text" id="home">
+        <div class="text">
+            <h1>Hi, I'm <span>NATNAEL</span> <br>Seifu From Ethiopia</h1>
+            <p>I'm a Full-Stack Web Developer</p>
+        </div>
+
+        <div class="container">
+            <div class="rown">
+                <div class="home-pic">
+                    <img src="images/pic.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container" id="about">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="about-title">About Me</h1>
+                    <p>I am a full-stack web developer who enjoys creating both the front-end and back-end technologies.
+                        I focus on developing responsive, user-friendly websites that provide seamless experience. I am
+                        always looking for new challenges to solve and become a better developer by learning new things.
+                        My aim is to write clean, efficient and readable code that makes the ideas come to life. Lets'
+                        make something special together!
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br>Experienced in HTML, CSS, JavaScript, Boottrap for
+                                creating
+                                responsive web interfaces.</li>
+                            <li><span>Backend Development</span><br>Proficient in Python , SQL databases, API
+                                Development, Testing
+                                and Debugging.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship at Prodigy InfoTech</span><br> Worked on creating web projects and
+                                gained experience in web developmen.</li>
+                            <li><span>ALX SE Founation Portfolio</span><br>Developed a web application for personalized
+                                music recommendations as part of an ALX SE Foundation portfolio project.</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>ALX Software Engineering Program</span><br>Currently learning in ALX SE and
+                                specializing in backend development.</li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="portfolio">
+
+        <div class="container">
+            <h1 class="sub-title"> Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/stop_watch.jpg" alt="">
+                    <div class="layer">
+                        <h3> stop watch</h3>
+                        <p>A simple and intuitive stopwatch application built using HTML, CSS, and JavaScript.</p>
+                        <a href="https://prodigy-wd-02-kyvy.onrender.com/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/weather.jpg" alt="">
+                    <div class="layer">
+                        <h3> Weather App</h3>
+                        <p>An interactive weather application designed with HTML, CSS, and JavaScript. Provides
+                            real-time weather updates and forecasts based on user location.</p>
+                        <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work nat">
+                    <img src="images/music.jpg" alt="">
+                    <div class="layer">
+                        <h3>Song Recommender!</h3>
+                        <p>A personalized music recommendation system that suggests songs based on user preferences.
+                            Built using Python and Flask.</p>
+                        <a href="https://song-recommender-1.onrender.com/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="row">
+            <div class="contact-mid">
+                <h1 class="sub-title"> Contact Me</h1>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/natnael-seifu/"
+                        class="btn btn-icon btn-outline-primary mx-2"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/naty1914" class="btn btn-icon btn-outline-dark mx-2"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/NatnaelSeifu19" class="btn btn-icon btn-outline-info mx-2"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1k4InUx9I-v2Nz9RNOLvyOds3K-q-6FGt/view?usp=sharing"
+                    class="btn btn2"> Download CV</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="container">
+            <p><a href="#intro" class="text-white"></a>
+                Copyright ©2024 All rights reserved made by Natnael Seifu </p>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
